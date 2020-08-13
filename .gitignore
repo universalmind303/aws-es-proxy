@@ -1,0 +1,5 @@
+node_modules
+.vscode/*
+.vscode
+proxy-config.yml
+bundle.js

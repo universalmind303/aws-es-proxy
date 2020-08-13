@@ -1,0 +1,14 @@
+auth:
+    provider: none # valid options are [none, okta, jwt]
+    okta:
+        issuer: https://dev.okta.com/oauth2/default # your okta issuer
+        audience: api://default # your audience for the okta api
+        client_id: <<client_id>> # your okta client_id
+    # jwt: 
+    #     issuer: Optional jwt issuer
+    #     audience: Optional jwt audience
+    #     secret: your secret if using a secret string
+    #     key: the path to your secret key if using a `.key` file 
+aws:
+    region: us-east-1 # the aws region of your es cluster
+    target: https://my-es-cluster.us-east-1.es.amazonaws.com # the es url including http:// or https://
