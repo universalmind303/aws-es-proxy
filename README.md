@@ -1,4 +1,5 @@
 # aws-es-proxy
+## THIS IS STILL IN BETA
 aws-es-proxy is a small web server application sitting between your HTTP client and Amazon Elasticsearch service. It will sign your requests using latest AWS Signature Version 4 before sending the request to Amazon Elasticsearch. When response is back from Amazon Elasticsearch, this response will be sent back to your HTTP client. The purpose of this is to simplify the request signing process, and allow connections via tooling that does not natively support AWS Elasticsearch Service (es-hadoop, logstash, elasticsearch beats, etc). 
 
 AWS Elasticsearch has pretty limited support for auth integrations. This proxy allows you to integrate with popular auth providers, and delegate the authentication from Elasticsearch to your auth provider. 
